@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    background-color: rgba(78, 78, 78, 0.43);
+}
+.borderDiv {
+    
+    background: red;
+    background: linear-gradient(to right, #4c00ff, #ff0000);
+    padding: 20px;
+    margin: 100px;
+    
+}
+
+p{
+   background: white;
+   padding: 20px;
+   font-size: 2 rem;
+}

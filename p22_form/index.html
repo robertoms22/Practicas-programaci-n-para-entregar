@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/fun.js" defer></script>
+</head>
+<body>
+    <h1>FORMULARIO </h1>
+    <form action="formreception.php" name="usuario_wp" enctype="application/x-www-form-urlencoded" method="post">
+        
+
+        <fieldset>
+            <label for="">Introduce tu nombre y apellido</label>
+        <input type="text" name="nameInput" id="name_user">
+
+   
+        <label for="">Mayor de 18</label>
+        <input type="checkbox" name="user_age" id="age_input">
+        <label for="">Sin problemas de corazón</label>
+        <input type="checkbox" name="user_heart" id="heart_input">
+        <label for="">En pleno uso de mis facultades mentales</label>
+        <input type="checkbox" name="user_mind" id="mind_input">
+   
+
+        <label for="">Hombre</label>
+        <input type="radio" name="user_sex" id="age_input">
+        <label for="">Mujer</label>
+        <input type="radio" name="user_sex" id="heart_input">
+        <label for="">Otro</label>
+        <input type="radio" name="user_sex" id="mind_input">
+   
+
+    
+        <label for="">Elige tu deporte</label>
+        <select name="Elige tu deporte" id="select_sport">
+        <option value="">Crossfit</option>
+        <option value="">pinning</option>
+        <option value="">Kung fu</option>
+        </select>
+   
+   
+
+    
+        <label for="">Comentarios</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+        <label for="password">Contraseña</label>
+        <div class="password-input">
+            <input type="password" id="password" placeholder="Introduce contraseña">
+            <span class="show-password" id="showPassword">&#128065;</span>
+
+        </div>
+        
+        <input type="submit" value="Enviar">
+
+        
+        </fieldset>
+        
+
+
+    </form>
+    
+    
+    
+   
+
+
+
+    
+
+</body>
+</html>

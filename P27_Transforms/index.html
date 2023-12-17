@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .transformers {
+            width: 400px;
+            height: 400px;
+            font-size: 4rem;
+            color: white;
+            background-color: blue;
+        }
+
+        .transform-type {
+            /* transform: nombre(valor) nombre(valor)...;
+            eje X Y Z predeterminado eje X */
+
+            /* rotate         nª de vueltas */
+            transform: rotate(1turn);
+
+            /* skew */
+            transform: skew(40deg);
+            
+            /* translate, crea un desplazamiento.
+            Se suele usar para modificar el centro. 
+            El elemento sigue ocupando su espacio inicial, por lo que no mueve los elementos colindadntes al desplazarse*/
+            transform: translate(300px);
+
+            /* scale, produce un escalado*/
+            transform: scale(2);
+
+            /* para usar muchos parametros a la vez */
+            transform: matrix(0.4,0,0,5);
+
+
+
+
+        }
+
+    </style>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, culpa, officia illo pariatur fugit tempore explicabo, nisi dolore corrupti libero obcaecati consequatur qui distinctio expedita excepturi asperiores dignissimos ipsam quibusdam.</p>
+        <div class="transformers transform-type">
+            OPTIMUS PRIME
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

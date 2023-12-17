@@ -1,0 +1,40 @@
+label, input {
+    display: block;
+}
+
+body {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: beige;
+}
+
+form {
+    background-color:rgb(160, 160, 146);
+    
+}
+
+.password-input {
+    position: relative;
+}
+
+#password {
+    padding-right: 30px;
+}
+
+
+.show-password {
+    position: absolute;
+    top: 50%;
+    left: 180px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    color: #333;
+    
+   
+}
+
+.show-password:hover {
+    color: #007bff;
+  }

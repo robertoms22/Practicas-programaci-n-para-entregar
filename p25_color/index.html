@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+
+       .shadow {
+        flex-basis: 40%;
+        height: 200px;
+        background-color: blue;
+        box-shadow: 0px 0px 15px 5px black;
+
+       }
+
+       .text-shadow { 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 4rem;
+        text-shadow: 20px 10px 5px red;
+    }
+    </style>
+
+    <div class="container">
+        <div class="shadow">
+            <p class="text-shadow">Esto es un text shadow</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

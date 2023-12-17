@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+         //4
+
+         const meses = [
+            "enero",
+            "febrero",
+            "marzo",
+            "abril",
+            "mayo",
+            "junio",
+            "julio",
+            "agosto",
+            "septiembre",
+            "octubre",
+            "noviembre",
+            "diciembre",
+
+        ]
+
+        //FOR
+        for(let i=0; i < meses.length; i++ ) {
+            if(meses[i] == "febrero") continue;
+            console.log(meses[i]);
+        }
+
+        console.log("-----------------------");
+
+        //FOREACH
+        meses.forEach((element) =>{
+            if (element == "febrero") {return;}
+            console.log('--------', element);
+        })
+
+        console.log("-----------------------");
+
+        //FOR OF
+        for(let item of meses) {
+            console-log(item);
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

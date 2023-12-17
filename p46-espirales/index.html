@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, rgb(10, 10, 10), rgb(26, 24, 24));
+            
+            height: 100vh;
+
+        }
+    </style>
+    <canvas id="myCanvas" width="400" height="400" style="border: 2px solid black"></canvas>
+
+    <script>
+        //capturo canvas
+        const myCanvas = document.getElementById("myCanvas");
+
+        //le creo un contexto
+        const ctx = myCanvas.getContext("2d");
+
+        //defino los centros
+        var centerX = 200;
+        var centerY = 200;
+
+        //posicino el pincel en los centros definidos 
+        ctx.moveTo(centerX, centerY)
+
+        //cambio color del background
+        ctx.fillstyle= "black";
+        ctx.fillRect(0,0,myCanvas.width, myCanvas.height);
+
+        //parmetros para nutrir el bucle y la espiral
+        //espacio entre lineas de la espiral
+        var gap = 2;
+
+        //incremento/ resolución de la espiral
+        var increment = 1;
+
+        //valor de incremento aplicado a la formula
+        var theta = increment;
+
+        function animate () {
+
+            // la magia
+            var newX = centerX + theta *Math.cos(theta)* gap;
+            var newY = centerY + theta *Math.sin(theta)* gap;
+
+            //defino paramteros de color
+            ctx.strokeStyle = "#865DFF";//color
+            ctx.lineTo(newX, newY);
+            ctx.stroke();//pintar espiral
+
+            //incremento theta en base el incremento para que la espiral avance
+            theta = theta + increment;
+
+            window.requestAnimationFrame( function(){
+                if(theta === 300) return;
+
+                animate();
+            })
+        }
+
+        animate();
+
+        window.addEventListener('resize', function(e){
+            console.log('')
+        })
+
+        //accion de pintar
+        
+
+    //     //rectangulo
+    //     ctx.beginPath(); //limpio subtrazos e inicio trazo nuevo
+
+    //     ctx.lineWidth= "1"; //ancho del trazo
+
+    //     ctx.strokeStyle="#F00"; //color del trazo
+
+    //     ctx.rect(5.5,9,65,44) //crear el rectangulo
+
+    //     ctx.stroke() //accion de pintar
+
+    //     //circulo
+    //     for (let index = 0; index < 20; index++) {
+    //         const centerX = Math.floor(Math.random()*400 +1);
+    //         const centerY = Math.floor(Math.random()*400 +1);
+
+        
+    //         ctx.beginPath(); //limpio subtrazos e inicio trazo nuevo
+
+    //         ctx.lineWidth= "2"; //ancho del trazo
+
+    //         ctx.strokeStyle="#0F0"; //color del trazo
+
+    //         ctx.arc(centerX, centerY, 20, 0, 2*Math.PI); //crear el circulo
+
+    //         ctx.stroke(); //accion de pintar
+        
+
+    //     //trazo
+    //     ctx.beginPath(); //limpio subtrazos e inicio trazo nuevo
+
+    //     ctx.lineWidth= "2"; //ancho del trazo
+
+    //     ctx.strokeStyle="#00F"; //color del trazo
+
+    //     ctx.moveTo(centerX, centerY); //cordenadas de inicio de
+
+    //     ctx.lineTo(300,300); // cordenadas de fin de trazo
+
+    //     ctx.stroke();
+    // }
+
+
+
+
+    </script>
+</body>
+</html>

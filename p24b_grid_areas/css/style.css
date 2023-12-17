@@ -1,0 +1,33 @@
+* {margin:0; padding: 0; box-sizing: border-box;}
+
+.grid__container {
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "lateral principal principal"
+    "pie pie pie";
+}
+
+header {
+    background-color: bisque;
+    padding: 50px;
+    grid-area: cabecera;
+}
+
+aside {
+    background-color: burlywood;
+    padding: 50px;
+    grid-area: lateral;
+}
+
+main {
+    background-color: brown;
+    padding: 50px;
+    grid-area: principal;
+}
+
+footer {
+    background-color: bisque;
+    padding: 50px;
+    grid-area: pie;
+}
