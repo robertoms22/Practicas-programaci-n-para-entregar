@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <script src="JS/sript.js"></script>
+</head>
+<body>
+<header class="header">
+    <hi class="header__in">
+    Dev Emotions Tool
+    </hi>
+</header>
+<div class="emotions">
+    <aside class="emotions__list">
+        <ul>
+            <li class="emotions__items">
+                <button value="iluminación">ILUMINACIÓN</button>
+            </li>
+            <li class="emotions__items">
+                <button value="paz">PAZ</button>
+            </li>
+            <li class="emotions__items">
+                <button value="alegria">ALEGRÍA</button>
+            </li>
+            <li class="emotions__items">
+                <button value="amor">AMOR</button>
+            </li>
+            <li class="emotions__items">
+                <button value="razonamiento">RAZONAMIENTO</button>
+            </li>
+            <li class="emotions__items">
+                <button value="aceptacion">ACEPTACIÓN</button>
+            </li>
+            <li class="emotions__items">
+                <button value="voluntad">VOLUNTAD</button>
+            </li>
+            <li class="emotions__items">
+                <button value="neutralidad">NEUTRALIDAD</button>
+            </li>
+            <li class="emotions__items">
+                <button value="coraje">CORAJE</button>
+            </li>
+            <li class="emotions__items">
+                <button value="orgullo">ORGULLO</button>
+            </li>
+            <li class="emotions__items">
+                <button value="ira">IRA</button>
+            </li>
+            <li class="emotions__items">
+                <button value="deseo">DESEO</button>
+            </li>
+            <li class="emotions__items">
+                <button value="miedo">MIEDO</button>
+            </li>
+            <li class="emotions__items">
+                <button value="tristeza">TRISTEZA</button>
+            </li>
+            <li class="emotions__items">
+                <button value="apatía">APATÍA</button>
+            </li>
+            <li class="emotions__items">
+                <button value="culpa">CULPA<buttonp>
+
+                </li>
+            <li class="emotions__items">
+                <button value="verguenza">VERGUENZA</button>
+            </li>
+
+        </ul>
+    </aside>
+    <main class="emotions__message">
+        <p>No me sale ni una práctica pero VAMOS
+        VAMOS!!, que rule JS!!!</p>
+        <p style="display: none;">He terminado el proyecto </p>
+        <p style="display: none;">Ohh si! Es viernes!!</p>
+        <p style="display: none;">Me quiero tanto que</p>
+        
+    </main>
+    
+   
+</div>
+
+<script>
+    const emotionsBtn = document.querySelectorAll('.emotions__items button');
+    console.log(emotionsBtn)
+    emotionsBtn.forEach((boton,index) => {
+        console.log(index);
+        const colorMutation = Math.floor(280 -(index*(280/emotionsBtn.length)));
+        const color = "hsl("+colorMutation+",100%,50%)";
+        boton.style.color= color;
+
+        boton.addEventListener('click', cargarMensaje);
+    });
+
+    function cargarMensaje (){
+        console.log('holi');
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

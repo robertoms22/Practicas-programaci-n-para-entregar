@@ -1,0 +1,99 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    background-color: black;
+}
+
+.tv {
+    padding: 20px;
+    border: 4px solid yellow;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 4%;
+    position: relative;
+    
+    margin-top: 5%;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+.tv__screen {
+    border: 4px solid yellow;
+    width:  800px;
+    height: 600px;
+    border-radius: 2%;
+}
+
+.tv__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tv__buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+   
+
+
+.tv__button-item {
+    padding: 5px 10px;
+}
+
+.tv__buttons-8 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 200px;
+    width: 100%;
+}
+
+.tv__buttons-on-off{
+    width: 60px;
+    height: 35px;
+    background-color: rgb(255, 0, 0);
+}
+
+.tv__buttons-sint {
+    width: 60px;
+    height: 10px;
+    background-color: yellow;
+}
+
+p {
+    color: aliceblue;
+}
+
+
+
+.tv__leg--left {
+    position: absolute;
+    display: inline;
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    bottom: -34px;
+    left: 10%;
+}
+
+.tv__leg--right {
+    position: absolute;
+    display: inline;
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    bottom: -34px;
+    right: 10%;
+}
+
+button {
+    cursor: pointer;
+}
+   
+   
+   
+    
+
+

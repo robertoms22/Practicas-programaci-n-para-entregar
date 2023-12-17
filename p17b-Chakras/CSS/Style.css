@@ -1,0 +1,92 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+svg{
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman{
+    width: 600px;
+    position: relative;
+}
+
+.chakra--purple{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: purple;
+    top: 24%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--indigo{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 29%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--blue{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(0, 225, 255);
+    top: 36%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--green{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(55, 255, 0);
+    top: 44%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--yellow{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 247, 0);
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--orange{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 140, 0);
+    top: 55%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.chakra--red{
+    position:absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    top: 63%;
+    left:50%;
+    transform: translate(-50%);
+}

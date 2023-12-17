@@ -1,0 +1,22 @@
+
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+.bloque_exterior{
+    padding: 4%; 
+    background: #414040;
+    background: linear-gradient(to right, blue, rgb(119, 170, 218));
+}
+
+.bloque_interior{
+
+    font-size: 20vw;
+    background-color: blue;
+    width: 50vw;
+    height: 50vw;
+    background: linear-gradient(to right, blue, rgb(119, 170, 218));
+   
+  
+  
+}
+
+

@@ -1,0 +1,43 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.einstein{
+   
+    background-image: url(img/einstein.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: #232937;
+    padding: 4em 6em;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.einstein-txt{
+    background-color: #8C8F97 ;
+    color: #232937;
+    font-size: 1.9rem;
+    padding: 1em 1.4em;
+    width: 60%;
+    transform: skew(-10deg);
+    
+    
+    
+}
+
+@media screen and (max-width:600px) {
+
+    html {
+        font-size: 80%;
+    }
+    .einstein {
+        padding: 0;
+    }
+    .einstein-txt {
+        width: 100%;
+        transform: none;
+    }
+    
+}
+

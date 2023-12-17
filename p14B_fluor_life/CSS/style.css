@@ -1,0 +1,131 @@
+body{
+    width: 50%;
+}
+
+header{
+    
+    background-color: #483737;
+    color: aliceblue;
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+    
+
+}
+
+div p {
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+
+    
+}
+
+div{
+    background-color: black;
+   padding-bottom: 50px;
+   padding-left: 30px;
+   padding-top: 30px;
+}
+
+header div {
+    margin:0;
+    padding: 0;
+
+}
+
+footer p{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 50%;
+    margin: 10px;
+    
+    
+    
+
+    
+}
+footer{
+    background-color: #483737;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center;
+    
+    
+}
+
+div p:nth-child(2):hover{
+    background-color: aliceblue;
+}
+
+div p:nth-child(4):hover{
+    background-color: aliceblue;
+}
+
+div p:nth-child(6):hover{
+    background-color: aliceblue;
+}
+
+div p:nth-child(2){
+    width: 90%;
+    height: 70px;
+    background-color: rgb(0, 255, 225);
+    cursor: pointer;
+}
+
+div p:nth-child(4){
+    width: 80%;
+    height: 70px;
+    background-color: rgb(255, 0, 217);
+    cursor: pointer;
+}
+
+div p:nth-child(6){
+    width: 70%;
+    height: 70px;
+    background-color: rgb(255, 251, 0);
+    cursor: pointer;
+   
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+header span {
+    cursor: pointer;
+}
+
+
+header span:hover {
+    color: magenta;
+}
+
+header span:nth-child(2):hover {
+    color: rgb(255, 251, 0);
+}
+
+header span:nth-child(3):hover {
+    color: rgb(0, 255, 255);
+}
+
+/* .lightful::before {
+    content: "|";
+    margin-left: 17px;
+}
+
+.lightful::after {
+    content: "|";
+ 
+} */
+
+
+
+

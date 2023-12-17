@@ -1,0 +1,90 @@
+
+body{
+    position: absolute;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+.cuadrado {
+    display: inline-block;
+    padding: 15px
+}
+
+.cuadrado__shape {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.borde-redondo {
+    border-radius: 20%;
+    background: yellow;
+}
+
+.cuadrado__small-item {
+    width: 40px;
+    height: 40px;
+    background: yellow;
+
+}
+.cuadrado__shape--rojo {
+    background-color: red;
+
+}
+
+.cuadrado__shape--amarillo {
+    background-color: yellow ;
+    
+}
+
+.cuadrado__shape--verde {
+    background-color: green ;
+    
+}
+
+.cuadrado__shape--azulflojo {
+    background-color: rgb(60, 172, 236) ;
+    
+}
+
+.cuadrado__shape--azul {
+    background-color:blue ;
+    
+}
+
+.cuadrado__shape--violeta {
+    background-color:rgb(90, 42, 90) ;
+    
+}
+
+.cuadrado__shape--rosa {
+    background-color:rgb(181, 111, 184) ;
+    
+}
+
+.cuadrado__shape--gris {
+    background-color:gray ;
+    position: relative;
+
+    
+}
+
+.cuadrado__small-item--redondo {
+    border-radius: 30%;
+}
+
+.cuadrado__small-item--absoluto {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.cuadrado__small-item--deverde {
+    margin: 10px;
+
+}
+
+.cuadrado__small-item--derojo{
+    margin: 10px;
+} 
