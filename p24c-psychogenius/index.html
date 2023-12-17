@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid__container">
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"><grid class="grid__item grid__item--g">G</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"> <grid class="grid__item grid__item--e">E</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"><grid class="grid__item grid__item--n">N</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"><grid class="grid__item grid__item--i">I</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"><grid class="grid__item grid__item--u">U</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <div class="foto"><grid class="grid__item grid__item--s">S</grid></div>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+        <grid class="grid__item"></grid>
+    </div>
+
+    <script>
+        const flexItems = document.querySelectorAll('.grid__item');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });   
+    </script>
+
+    
+</body>
+</html>

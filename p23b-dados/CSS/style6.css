@@ -1,0 +1,81 @@
+*{
+    margin:0; padding:0; box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 6%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: solid 2px black;
+    
+    padding: 40px;
+    
+    
+    
+   
+   
+
+}
+
+.circulo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 12px;
+    margin-left: 12px;
+    
+    
+}
+
+.circulo--1 {
+
+}
+
+.circulo--2 {
+    background-color: white;
+
+}
+
+.circulo--3 {
+
+}
+
+.circulo--4 {
+    
+
+}
+
+.circulo--5 {
+    background-color: white;
+    
+}
+
+.circulo--6 {
+    
+
+}
+
+.circulo--7 {
+
+}
+
+.circulo--8 {
+    background-color: white;
+}
+
+.circulo--9 {
+
+}

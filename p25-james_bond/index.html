@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            background-color: black;
+        }
+        .container {
+            height: 90vh;
+            position: relative;
+            background: black;
+        }
+        .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/cantinflas.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            mix-blend-mode: darken;
+        }
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 0, 0);
+            transition: all 0.5s ease;
+        }
+        .start-btn {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="mask">
+        <div class="circle"></div>
+    </div>
+    <div class="photo"></div>
+</div>
+<div class="start-btn" onclick="moverCirculo()">Start</div>
+
+<script>
+    function moverCirculo() {
+        var circle = document.querySelector('.circle');
+        // Generamos nuevas posiciones aleatorias dentro de los límites de la pantalla
+        var nuevaPosicionX = Math.random() * (window.innerWidth - 300);
+        var nuevaPosicionY = Math.random() * (window.innerHeight - 300);
+
+        // Aplicamos las nuevas posiciones al círculo
+        circle.style.left = nuevaPosicionX + 'px';
+        circle.style.top = nuevaPosicionY + 'px';
+    }
+</script>
+
+</body>
+</html>
+
+

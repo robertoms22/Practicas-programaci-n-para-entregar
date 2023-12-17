@@ -1,0 +1,150 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+.menu {
+    text-align: center;
+    
+    
+}
+
+.header {
+    background-color: #2b3467;
+    padding-top: 30px;
+    padding-bottom: 1px;
+    
+    
+    
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin: 10px;
+   
+}
+
+.noticias {
+    display: inline;
+    margin-right: 100px;
+    color: white;
+
+}
+
+.examenes {
+    display: inline;
+    margin-right: 100px;
+    color: white;
+}
+
+.proyectos {
+    
+    display: inline;
+    margin-right: 100px;
+    color: white;
+}
+
+.alumnos {
+    display: inline;
+    margin-right: 100px;
+    color: white;
+    
+}
+
+.profesores {
+    display: inline;
+    margin-right: 100px;
+    color: white;
+    
+    
+    
+}
+
+.bloque-central {
+    background-color:#fcffe7;
+    display: flex;
+    justify-content:space-between;
+    margin:20px;
+    height: 600px;
+
+    
+}
+
+.texto-izquierda {
+    flex: 1;
+    margin-right: 10px;
+    padding: 20px;
+    
+}
+
+.texto-derecha {
+    flex: 3;
+    margin-right: 300px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+footer {
+
+    background-color: #2b3467;
+    width: 1405spx; 
+    height: 200px;
+}
+
+.bloque-separador {
+    width: 20px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 60px;
+    color: red;
+}
+
+.imagen1 {
+    width: 200px;
+    height: 70px;
+}
+
+.imagen2 {
+    width: 200px;
+    height: 70px;
+}
+
+.contenedor-columnas {
+    display: flex;
+}
+
+.columna{
+    flex: 1;
+    
+    
+}
+
+.texto-negrita{
+    margin-bottom: 10px;
+}
+
+.texto2{
+    margin-bottom: 10px;
+}
+
+.titulo-imagen1{
+    margin-bottom: 20px;
+}
+
+.titulo-imagen2{
+    margin-bottom: 20px;
+}
+
+.texto-imagen1{
+    margin-right: 20px;
+}
+
+.texto-imagen2{
+    margin-right: 20px;
+}

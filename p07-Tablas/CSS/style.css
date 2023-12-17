@@ -1,0 +1,38 @@
+table tr td {
+    border: 1px solid rgba(253, 253, 253, 0.404);
+}
+
+td {
+    padding: 50px;
+    
+}
+
+.linea1{
+    background-color: #0000ff;
+    color: #ffffff;
+
+}
+
+.linea2{ 
+    background-color: rgba(0, 0, 255, 0.692);
+    text-align: center;
+
+}
+
+.linea3{
+    background-color: rgba(0, 0, 255, 0.493);
+    text-align: center;
+
+}
+
+.linea4{
+    background-color: rgba(0, 0, 255, 0.295);
+    text-align: center;
+
+}
+
+.linea5{
+    background-color: rgba(0, 0, 255, 0.075);
+    text-align: center;
+
+}

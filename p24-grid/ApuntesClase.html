@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      
+        .grid__container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-content: stretch;
+            align-items: stretch;
+            height: 800px;
+            
+            
+
+        }
+        .grid_item {
+            justify-content: center;
+        }
+
+    </style>
+
+    <div class="grid__container">
+        <grid class="grid_item">1</grid>
+        <grid class="grid_item">2</grid>
+        <grid class="grid_item">3</grid>
+        <grid class="grid_item">4</grid>
+        <grid class="grid_item">5</grid>
+        <grid class="grid_item">6</grid>
+        <grid class="grid_item">7</grid>
+        <grid class="grid_item">8</grid>
+        <grid class="grid_item">9</grid>
+        <grid class="grid_item">10</grid>
+        <grid class="grid_item">11</grid>
+        <grid class="grid_item">12</grid>
+        <grid class="grid_item">13</grid>
+        <grid class="grid_item">14</grid>
+        <grid class="grid_item">15</grid>
+        <grid class="grid_item">16</grid>
+       
+       
+        
+        
+        
+    </div>
+
+    
+    <script>
+        const flexItems = document.querySelectorAll('.grid_item');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });   
+    </script>
+    
+</body>
+</html>
