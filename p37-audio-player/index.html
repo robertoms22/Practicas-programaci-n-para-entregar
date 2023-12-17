@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Iglesias</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playButton = document.querySelector('.container__boton--play');
+    const stopButton = document.querySelector('.container__boton--stop');
+    
+    playButton.addEventListener('click', function () {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
+    });
+
+    stopButton.addEventListener('click', function () {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+    });
+});
+
+
+    </script>
+<div class="container__padre">
+    <div class="container">
+        <div class="container__reproductor">
+            <div class="container__reproductor__img">
+                <img src="img/julio.avif" alt="Julio Iglesias">
+            </div>
+            <div class="container__botones">
+                <button value="stop" class="container__boton--stop"></button>
+                <button value="play" class="container__boton--play"></button>
+                <button value="next" class="container__boton--next"></button>
+            </div>
+        </div>
+        <div class="container__cancion">
+            <div>
+                <p>TÍTULO</p>
+                <p>BAMBOLEO</p>
+            </div>
+            <div>
+                <p>TIEMPO</p>
+                <p>4:11</p>
+            </div>
+        </div>
+        <audio id="audioPlayer" src="audio/bamboleo.mp3"></audio>
+    </div>
+</div>
+    
+</body>
+</html>

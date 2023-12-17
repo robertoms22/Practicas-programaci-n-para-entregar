@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <div class="buttons">
+       <button class="buttons__button buttons__button--copy" value="copy">COPY</button>
+       <button class="buttons__button buttons__button--delete" value="delete">DELETE</button>
+       <button class="buttons__button buttons__button--insert" value="insert">INSERT TEXT</button>
+   </div>
+
+   <p class="dom-item">Holi soy un elemento DOM solitario</p>
+
+    <script>
+        //capturamos el contenedor de los botones
+        const buttons = document.querySelector('.buttons');
+    
+       
+        //creo un event listener sobre el contenedor de botones
+        buttons.addEventListener('click', function(e){
+            const domItem = document.querySelector('.dom-item');
+
+            clickOnElements(domItem, e.target.value);
+        });
+
+        function clickOnElements(domElement, action){
+            if (action === "delete"){
+                domElement.remove();
+            } else if(action === "copy"){
+                document.body.appendChild(domElement.cloneNode(true));
+            } else if(action === "insert"){
+                domElement.innerHTML = "texto generado por JS";
+            } else {
+                console.log("no existe esa acción");
+            }
+        }
+    </script>
+    
+</body>
+</html>

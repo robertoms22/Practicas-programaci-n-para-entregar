@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // CONSTANTES (propiedades)
+        Math.E //Número de euler
+        Math.PI //Número PI
+        Math.SQRT2 //Raiz cuadrada de 2
+        Math.LN2 //Logaritmo natural de 2 - e elevado a 2 = Math.LN2
+        Math.LN10 //Logaritmo natural de 10 - e elevado a 10 = Math.LN10
+        Math.LOG2E //Logaritmo de la constante de Euler - 2 elevado a e = Math.LOG2E
+        Math.LOG10E //Logaritmo de la constante de Euler - 2 elevado a e = Math.LOG10E
+
+
+
+        //Creo fecha actual en el instante de ejecución de código
+        let fechadeHoy = new Date();
+
+        //Año en formato AAAA
+        fechadeHoy.getFullYear();
+
+        //Mes en formato 0-11
+        fechadeHoy.getMonth();
+
+        //Dia en formato 1-31
+        fechadeHoy.getDate();
+
+        //Horas en formato 24H
+        fechadeHoy.getHours();
+
+        //Minutos en formato 0-59
+        fechadeHoy.getMinutes();
+
+        //Milisegundos en formato 0-999
+        fechadeHoy.getMilliseconds();
+
+        //Hora completa actual en milisegundos
+        fechadeHoy.getTime();
+
+        //Dia de la semana formato 1-7
+        fechadeHoy.getDay();
+
+        //Timestamp fecha y hora actual
+        Date.now();
+
+        console.log(fechadeHoy.getDate() + '-' + fechadeHoy.getMonth() + '-' + fechadeHoy.getFullYear());
+    </script>
+    
+</body>
+</html>

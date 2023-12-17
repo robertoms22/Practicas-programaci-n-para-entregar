@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{margin: 0; padding: 0%; box-sizing: border-box;}
+
+        body {
+            background-color: rgb(83, 81, 81);
+           
+        }
+
+        h1{
+            color: aliceblue;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+
+        .crono__slots {display:flex;}
+
+        span{
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            height: 100px;
+            flex-basis: 100px;
+            border: 2px solid rgb(255, 255, 255);
+            display: inline-block; 
+        }
+
+        .main__container {
+            margin: 20vh;
+            margin-left: 44%; 
+           
+        }
+
+        .crono__seconds, .crono__miliseconds {
+            padding: 20px;
+        }
+
+        body {
+            background-color: rgb(83, 81, 81);
+        }
+    </style>
+     
+    <h1>CRONOMETRO</h1>
+    
+    <div class="main__container">
+        <div class="crono__slots">
+            <span class="crono__seconds">0</span>
+            <span class="crono__miliseconds">0</span>
+        </div>
+    
+        <div class="crono__buttons">
+            <button class="crono__start" value="start">iniciar</button>
+            <button class="crono__stop" value="stop">parar</button>
+            <button class="cero" value="zero">poner a cero</button>
+        </div>
+
+    </div>
+   
+
+    <script>
+        // Constantes y variables
+        const cronoButtons = document.querySelector('.crono__buttons');
+        const cronoSeconds = document.querySelector('.crono__seconds');
+        const cronoMiliSeconds = document.querySelector('.crono__miliseconds');
+
+        // Funciones
+        let counterSeconds = 0;
+        let counterMiliseconds = 0;
+        let cronoInterval = "";
+
+        function startCrono(){
+            cronoInterval = setInterval(() => {
+                counterMiliseconds++;
+               
+                if (counterMiliseconds === 100){
+                    counterSeconds += 1;
+                    counterMiliseconds = 0;
+                }
+
+                cronoMiliSeconds.innerHTML = counterMiliseconds;
+                cronoSeconds.innerHTML = counterSeconds;
+            }, 10);
+        }
+
+        function stopCrono() {
+            clearInterval(cronoInterval);
+        }
+
+        function zeroCrono() {
+            counterSeconds = 0;
+            counterMiliseconds = 0;
+            cronoMiliSeconds.innerHTML = counterMiliseconds;
+            cronoSeconds.innerHTML = counterSeconds;
+        }
+
+        // Llamada a función, eventos, etc
+        cronoButtons.addEventListener('click', function(e){
+            e.target.value === "start" && startCrono();
+            e.target.value === "stop" && stopCrono();
+            e.target.value === "zero" && zeroCrono();
+        });
+    </script>
+</body>
+</html>

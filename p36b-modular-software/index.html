@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div><img src="https://picsum.photos/200/300" alt="foto random" title="foto aleatoria"><div></div>
+    
+    <button class="btn1">click me</button>
+
+    <style>
+        div{
+            padding: 40px;
+
+            background-color: red;
+
+            border: 2px solid black;
+        }
+
+
+
+
+
+    </style>
+
+    <script>
+        //capturo objeto dom
+        const btn1 = document.querySelector('.btn1');
+        const capturedObj = document.querySelector('div');
+        const imgCapt = document.querySelector('div img');
+        
+
+        //defino funciones
+        function divChanger(obj){
+
+            obj.classList.add('padd-40');
+            obj.classList.add('bg-red');
+            obj.classList.add('border-2');
+            
+            
+            
+        }
+        
+
+        //lanzo evento y dentro invoco la función
+        btn1.addEventListener('click', function(){
+            divChanger(capturedObj);
+            imgCapt.setAttribute('title','title cambiado por JS');
+            const altvalue = imgCapt.getAtribute('alt');
+        })
+    </script>
+    
+</body>
+</html>

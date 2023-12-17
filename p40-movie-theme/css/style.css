@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+img {width: 100%; display: block;}
+.ranking{
+    background-color: #d4c09c;
+    min-height: 100vh;
+}
+.ranking__title{
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    font-size: 3em;
+    padding: 40px;
+}
+
+.ranking__photo-container {
+    max-width: 100px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Divs</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; 
+        }
+
+       
+        div {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createRainbowDivs(numDivs) {
+           
+            const screenWidth = window.innerWidth;
+
+           
+            const step = 360 / numDivs;
+
+            
+            for (let i = 0; i < numDivs; i++) {
+                const div = document.createElement('div');
+                const color = `hsl(${i * step}, 100%, 50%)`; 
+                div.style.backgroundColor = color;
+
+               
+                div.style.width = `${screenWidth / numDivs}px`;
+                div.style.height = '100vh'; 
+                document.body.appendChild(div);
+            }
+        }
+
+      
+        createRainbowDivs(2000);
+    </script>
+</body>
+</html>
+

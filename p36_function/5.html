@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const myObject = {
+            prop1: "super",
+            prop2: "cali",
+            prop3: "fragi",
+            prop4: "listicoespialidoso",
+            prop5: "pep",
+            prop6: "pepeasdasdas",
+            prop7: "pepeasdasdasdas",
+            concatenar: function(){
+                let all ="";
+
+                Object.values(this).forEach((item)=>{
+                    if(typeof item === "string") all += item;
+                })
+
+                return all;
+            }
+        }
+
+        console.log(myObject.concatenar());
+
+    </script>
+    
+</body>
+</html>
